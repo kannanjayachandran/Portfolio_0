@@ -4,6 +4,9 @@ import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram} from 'react-icons/ai'
 import Image from "next/image"
 import myPic from '../public/myPic.png'
+import Design from '../public/Design.png'
+import datas from '../public/datas.png'
+import devOps from '../public/devops.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -70,7 +73,47 @@ export default function Home() {
       </div>
 
       <div>
-        
+        <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+          <Image alt="Description" src={Design} width={100} height={100}/>
+
+          <h3 className='text-lg font-medium pt-8 pb-2'>Machine Learning</h3>
+          <p className='py-2'>I am passionate about reading and implementing new theory papers published.</p>
+          <h4 className='py-4 text-teal-600 '>Machine Learning Libraries I use</h4>
+          <p className='text-gray-800 py-1'>Tensorflow</p>
+          <p className='text-gray-800 py-1'>Pytorch</p>
+          <p className='text-gray-800 py-1'>Keras</p>
+
+        </div>
+
+          <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+
+          <Image className='object-center' alt="Description" src={datas} width={100} height={100}/>
+          <h3 className='text-lg font-medium pt-8 pb-2'>Data science</h3>
+          <p className='py-2'>I love playing with data to unravel the secrets they hold</p>
+          <h4 className='py-4 text-teal-600 '>Some tools and techniques I use</h4>
+          <p className='text-gray-800 py-1'>Statistics</p>
+          <p className='text-gray-800 py-1'>Machine Learning</p>
+          <p className='text-gray-800 py-1'>Programming skills</p>
+
+          </div>
+
+          <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+
+        <Image alt="Description" src={devOps} width={100} height={100}/>
+        <h3 className='text-lg font-medium pt-8 pb-2'>DevOps</h3>
+        <p className='py-2'>I am learning the basics of DevOps</p>
+        <h4 className='py-4 text-teal-600 '>DevOps tools I use</h4>
+        <p className='text-gray-800 py-1'>Git</p>
+        <p className='text-gray-800 py-1'>Docker</p>
+        <p className='text-gray-800 py-1'>Ansible</p>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h3 className='text-3xl py-1'>Portfolio</h3>
       </div>
     </section>
 
