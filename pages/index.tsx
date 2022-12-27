@@ -3,7 +3,7 @@ import { Inter } from '@next/font/google'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram} from 'react-icons/ai'
 import Image from "next/image"
-import myPic from '../public/myPic.jpg'
+import myPic from '../public/myPic.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,10 +32,6 @@ export default function Home() {
         <h3 className='text-3xl py-2 font-medium'>I am</h3>
         <h2 className='text-5xl py-2 text-teal-600 font-medium'>Kannan Jayachandran</h2>
         <h3 className='text-xl py-2 font-medium'>Aspiring data scientist</h3>
-        <p className='text-md py-6 leading-8 text-gray-800'>
-          I am a student of computer science and engineering; currently pursuing my undergraduate degree in Artificial 
-          Intelligence and machine learning. 
-        </p>
       </div>
 
       <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
@@ -45,13 +41,38 @@ export default function Home() {
         <AiFillInstagram/>
       </div>
 
-      <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20'>
-        <Image alt="Description of the image" src={myPic} fill />
-
+      <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
+        <Image className='absolute h-full w-full ' alt="Description of the image" src={myPic} />
       </div>
-
      </section>
 
+{/* Section 2 */}
+
+    <section>
+      <div>
+        <h3 className='text-3xl py-1'>Personal Details</h3>
+
+        <p className='text-md py-2 leading-8 text-gray-800'>
+        I am <span className='text-teal-500'>Kannan Jayachandran</span> and I am a Computer Science 
+        Engineering student from India specializing in <span className='text-teal-500'>Artificial 
+        Intelligence</span> & <span className='text-teal-500'>Machine Learning.</span> 
+        I am currently in the pre-final year of my Bachelor&apos;s degree in Technology program. 
+        My passion for learning new things and sharing my knowledge drives me to spend a great deal 
+        of time learning concepts of computer science in depth. I&apos;m looking forward to pursue 
+        a career in <span className='text-teal-500'>data science </span>and 
+        <span className='text-teal-500'>machine learning</span>.
+        
+        </p>
+        <p className='text-md py-2 leading-8 text-gray-800'>
+        My interests outside of Computer Science include reading Sci-Fi books, exploring Physics, 
+        and studying History. I also enjoy watching movies.
+        </p>
+      </div>
+
+      <div>
+        
+      </div>
+    </section>
 
       </main>
     </>
