@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-white px-10'>
+      <main className='bg-white px-10 md:px-20 lg:px-40'>
      <section className='min-h-screen'>
       <nav className='py-10 mb-12 flex justify-between'>
         <h1 className='text-xl font-burtons'>Kannan Jayachandran</h1>
@@ -32,9 +32,9 @@ export default function Home() {
         </ul>
       </nav>
       <div className='text-center p-10'>
-        <h3 className='text-3xl py-2 font-medium'>I am</h3>
-        <h2 className='text-5xl py-2 text-teal-600 font-medium'>Kannan Jayachandran</h2>
-        <h3 className='text-xl py-2 font-medium'>Aspiring data scientist</h3>
+        <h3 className='text-3xl py-2 font-medium md:text-3xl'>I am</h3>
+        <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Kannan Jayachandran</h2>
+        <h3 className='text-xl py-2 font-medium md:text-3xl'>Aspiring data scientist</h3>
       </div>
 
       <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
@@ -108,12 +108,6 @@ export default function Home() {
         <p className='text-gray-800 py-1'>Ansible</p>
 
         </div>
-      </div>
-    </section>
-
-    <section>
-      <div>
-        <h3 className='text-3xl py-1'>Portfolio</h3>
       </div>
     </section>
 
