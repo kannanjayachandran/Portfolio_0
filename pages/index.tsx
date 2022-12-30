@@ -67,7 +67,7 @@ export default function Home() {
         My passion for learning new things and sharing my knowledge drives me to spend a great deal 
         of time learning concepts of computer science in depth. I&apos;m looking forward to pursue 
         a career in <span className='text-teal-500'>data science </span>and 
-        <span className='text-teal-500'>machine learning</span>.
+        <span className='text-teal-500'> machine learning</span>.
         
         </p>
         <p className='text-md py-2 leading-8 text-gray-800  dark:text-white'>
