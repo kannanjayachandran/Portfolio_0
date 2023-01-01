@@ -32,7 +32,11 @@ export default function Home() {
           <li>
             <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
           </li>
-          <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 rounded-md ml-8 text-white' href="#">Resume</a></li>
+          <li>
+            <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 rounded-md ml-8 text-white' href="#">
+              Resume
+            </a>
+          </li>
         </ul>
       </nav>
       <div className='text-center p-10'>
